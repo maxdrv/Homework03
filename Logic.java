@@ -49,7 +49,10 @@ public class Logic {
         TreeMap<String, Integer> statistics = new TreeMap<>(new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
-                return o1.compareToIgnoreCase(o2);
+                int cmp = o1.toLowerCase().compareTo(o2.toLowerCase());
+                if (cmp != 0) return cmp;
+
+                return o1.compareTo(o2);
             }
         });
 
