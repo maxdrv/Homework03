@@ -1,0 +1,9 @@
+This class provides a skeletal implementation of the link List
+interface to minimize the effort required to implement this interface
+backed by a random access data store such as an array  For sequential
+access data such as a linked list link AbstractSequentialList should
+be used in preference to this class
+ 
+To implement an unmodifiable list the programmer needs only to extend
+this class and provide implementations for the link get int and
+ link Listsize size methods to
